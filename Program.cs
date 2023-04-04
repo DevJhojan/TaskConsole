@@ -7,23 +7,15 @@ namespace TaskConsole
 {
     public class Program
     {
+
+        public static StardingTitle st = new StardingTitle();
+        public static Prompt prompt = new Prompt();
         public static void Main(string[] args)
         {
 
-            AddTask addTask = new AddTask();
-
-            AddFile addFile = new AddFile();
-
-            StardingTitle st = new StardingTitle();
-
             st.Title();
+            prompt.Input("");
 
-            //addFile.findFileTXT();
-            //addFile.deleteFileTXT("dataOne");
-            //addTask.WriteFile();
-            //addTask.ReadFile();
-            //addTask.DeleteData();
-            //addTask.ReadFile();
         }
 
     }
