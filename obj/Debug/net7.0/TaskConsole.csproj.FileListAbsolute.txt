@@ -1,0 +1,15 @@
+/home/dragon/workspace/TaskConsole/bin/Debug/net7.0/TaskConsole
+/home/dragon/workspace/TaskConsole/bin/Debug/net7.0/TaskConsole.deps.json
+/home/dragon/workspace/TaskConsole/bin/Debug/net7.0/TaskConsole.runtimeconfig.json
+/home/dragon/workspace/TaskConsole/bin/Debug/net7.0/TaskConsole.dll
+/home/dragon/workspace/TaskConsole/bin/Debug/net7.0/TaskConsole.pdb
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.csproj.AssemblyReference.cache
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.GeneratedMSBuildEditorConfig.editorconfig
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.AssemblyInfoInputs.cache
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.AssemblyInfo.cs
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.csproj.CoreCompileInputs.cache
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.dll
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/refint/TaskConsole.dll
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.pdb
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.genruntimeconfig.cache
+/home/dragon/workspace/TaskConsole/obj/Debug/net7.0/ref/TaskConsole.dll
