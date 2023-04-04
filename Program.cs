@@ -14,6 +14,7 @@ namespace TaskConsole
         {
 
             st.Title();
+            Console.WriteLine("");
             prompt.Input("");
 
         }
