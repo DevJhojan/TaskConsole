@@ -13,11 +13,12 @@ namespace TaskConsole
 
             AddFile addFile = new AddFile();
 
-            addFile.findFileTXT();
+            //addFile.findFileTXT();
             //addFile.deleteFileTXT("dataOne");
-            //addTask.WriteFile();
-            //addTask.ReadFile();
-            //addTask.DeleteData();
+            addTask.WriteFile();
+            addTask.ReadFile();
+            addTask.DeleteData();
+            addTask.ReadFile();
         }
 
     }
