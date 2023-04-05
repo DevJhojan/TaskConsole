@@ -26,7 +26,7 @@ namespace TaskConsole.Components.Stard
             Console.WriteLine("|------CC---CC----OO--OO---NN-----NNN----SS----SS---OO--OO---LL-------EE----------|");
             Console.WriteLine("|-------CCCCC------OOOO----NN------NN-----SSSSSS-----OOOO----LLLLLL---EEEEEE------|");
             Console.WriteLine("|---------------------------------------------------------------------------------|");
-            Console.WriteLine("|_________________________________________________________________________________|");
+            Console.WriteLine("|_____________________________________________________________________________V.00|");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
         }
     }
