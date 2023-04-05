@@ -5,11 +5,12 @@ namespace TaskConsole.Components.FileManagements;
 
 public class AddTask
 {
-    public void ReadFile()
+    public void ReadFile()//Modificar para que archivo se va a modificar (string nameFile)
     {
         string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
         using (StreamReader read = new StreamReader(path))
         {
+            Console.WriteLine("Tareas agregadas:");
             string line;
             while ((line = read.ReadLine()) != null)
             {
@@ -17,8 +18,9 @@ public class AddTask
             }
         }
     }
-    public void WriteFile()
+    public void WriteFile()//Modificar para que archivo se va a modificar (string nameFile)
     {
+        //que siempre muestre en que archivo va estar la tarea
         string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
         using (StreamWriter write = new StreamWriter(path))
         {
@@ -36,7 +38,7 @@ public class AddTask
             write.WriteLine("------------------------------");
             Console.Write("¿Quieres agregar la descripción?: ");
             string resp = Console.ReadLine();
-            if(resp=="si" || resp=="Si" || resp=="s" || resp=="S" || resp=="Y" || resp=="y")
+            if (resp == "si" || resp == "Si" || resp == "s" || resp == "S" || resp == "Y" || resp == "y")
             {
                 DescriptionTask(task);
             }
@@ -47,9 +49,9 @@ public class AddTask
         string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
         using (StreamWriter write = new StreamWriter(path))
         {
-            
+
             write.WriteLine("------------------------------");
-            write.Write("Descripcion de "+task+":");
+            write.Write("Descripcion de " + task + ":");
             Console.WriteLine("------------------------------");
             Console.WriteLine("------------------------------");
             Console.Write("Escribe la descripcion: ");
@@ -61,7 +63,7 @@ public class AddTask
             write.WriteLine("------------------------------");
         }
     }
-    public void DeleteData()
+    public void DeleteData()//Modificar para que archivo se va a modificar (string nameFile)
     {
         string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
 

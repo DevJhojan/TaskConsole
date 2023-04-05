@@ -1,4 +1,4 @@
-
+using TaskConsole.Components.FileManagements;
 namespace TaskConsole.Components.Stard
 {
     public class Prompt
@@ -8,7 +8,8 @@ namespace TaskConsole.Components.Stard
         private bool input = false;
 
         private StardingTitle title = new StardingTitle();
-
+        
+        private AddTask addTask = new AddTask();
         public void Input(string v)
         {
             input = true;
@@ -21,8 +22,12 @@ namespace TaskConsole.Components.Stard
                         Input(Console.ReadLine());
                         Console.ReadKey();
                         break;
-                    case "task":
-                        
+                    case "a-task":
+                        addTask.WriteFile();
+                        break;
+
+                    case "r-task":
+                        addTask.ReadFile();
                         break;
                     case "cl":
 
