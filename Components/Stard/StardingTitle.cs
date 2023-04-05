@@ -7,7 +7,7 @@ namespace TaskConsole.Components.Stard
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("___________________________________________________________________________________");
             Console.WriteLine("|---------------------------------------------------------------------------------|");
-            Console.WriteLine("|---------------TTTTTTTTTTT-----AAAAAA-----KK----KK----SSSSSS---------------------|");
+            Console.WriteLine("|--------------TTTTTTTTTTTT-----AAAAAA-----KK----KK----SSSSSS---------------------|");
             Console.WriteLine("|-------------------TT---------AA----AA----KK---KK----SS----SS--------------------|");
             Console.WriteLine("|-------------------TT--------AA------AA---KK--KK-----SS--------------------------|");
             Console.WriteLine("|-------------------TT--------AAAAAAAAAA---KKkKK-------SSSSSS---------------------|");

@@ -1,7 +1,7 @@
 namespace TaskConsole.Components.FileManagements;
 public class AddFile
 {
-    public void addFileTXT(string nameFile)
+    public void addFileTXT(string? nameFile)
     {
 
         string path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";
@@ -16,7 +16,7 @@ public class AddFile
         }
     }
 
-    public void deleteFileTXT(string nameFile)
+    public void deleteFileTXT(string? nameFile)
     {
         string path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";
         File.Delete(path);

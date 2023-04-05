@@ -1,79 +1,130 @@
+using System.Data.Common;
 using System;
 using System.IO;
-
 namespace TaskConsole.Components.FileManagements;
 
 public class AddTask
 {
-    public void ReadFile()//Modificar para que archivo se va a modificar (string nameFile)
+    private AddFile addFile = new AddFile();
+    private static string? task;
+
+    private static string? description;
+    public void ReadFile(string? nameFile)//Modificar para que archivo se va a modificar (string nameFile)
     {
-        string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
+        Console.WriteLine("|---Estas en espacio: " + nameFile + "---|");
+        string path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";//midifcar => ""+nameFile+".txt"
         using (StreamReader read = new StreamReader(path))
         {
-            Console.WriteLine("Tareas agregadas:");
-            string line;
+            Console.WriteLine("|----Tareas agregadas----|");
+            string? line;
             while ((line = read.ReadLine()) != null)
             {
                 Console.WriteLine(line);
             }
         }
     }
-    public void WriteFile()//Modificar para que archivo se va a modificar (string nameFile)
+    public void WriteFile(string? nameFile)
     {
-        //que siempre muestre en que archivo va estar la tarea
-        string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
-        using (StreamWriter write = new StreamWriter(path))
+        Console.WriteLine("Tipo de tarea: " + nameFile);
+
+        string path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";
+        if (File.Exists(path))
         {
-            write.WriteLine("------------------------------");
-            write.WriteLine("------------------------------");
-            write.Write("Tarea:");
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("------------------------------");
-            Console.Write("Agrega la tarea: ");
-            string task = Console.ReadLine();
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("------------------------------");
-            write.WriteLine(task);
-            write.WriteLine("------------------------------");
-            write.WriteLine("------------------------------");
-            Console.Write("¿Quieres agregar la descripción?: ");
-            string resp = Console.ReadLine();
+
+            using (StreamWriter write = File.AppendText(path))
+            {
+                write.WriteLine("------------------------------");
+                write.WriteLine("------------------------------");
+                write.Write("Tarea:");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("------------------------------");
+                Console.Write("Agrega la tarea > ");
+                task = Console.ReadLine();
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("------------------------------");
+                write.WriteLine(task);
+                write.WriteLine("------------------------------");
+                write.WriteLine("------------------------------");
+
+            }
+        }
+        else
+        {
+            Console.WriteLine("Tu espacio no se encuentra: ¿pero quieres Crearla?");
+            string? resp = Console.ReadLine();
             if (resp == "si" || resp == "Si" || resp == "s" || resp == "S" || resp == "Y" || resp == "y")
             {
-                DescriptionTask(task);
+                Console.Write("Nombre del Espacio");
+                string? res = Console.ReadLine();
+                addFile.addFileTXT(res);
+            }
+        }
+
+    }
+    public void DescriptionTask(string? nameFile) //agregar la ruta del archivo
+    {
+
+        string path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";//midifcar => ""+nameFile+".txt"
+        if (File.Exists(path))
+        {
+
+            using (StreamWriter write = File.AppendText(path))
+            {
+
+                write.Write("Descripcion de " + task + ":");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("------------------------------");
+                Console.Write("Escribe la descripcion > ");
+                description = Console.ReadLine();
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("------------------------------");
+                write.WriteLine(description);
+                write.WriteLine("------------------------------");
+                write.WriteLine("------------------------------");
+
             }
         }
     }
-    public void DescriptionTask(string task)
+    public void DeleteData(string? nameFile)
     {
-        string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
-        using (StreamWriter write = new StreamWriter(path))
+        Console.WriteLine("Estas en espacio: " + nameFile);
+        string? path = "/home/dragon/workspace/TaskConsole/Data/" + nameFile + ".txt";
+        if (File.Exists(path))
         {
 
-            write.WriteLine("------------------------------");
-            write.Write("Descripcion de " + task + ":");
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("------------------------------");
-            Console.Write("Escribe la descripcion: ");
-            string description = Console.ReadLine();
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("------------------------------");
-            write.WriteLine(description);
-            write.WriteLine("------------------------------");
-            write.WriteLine("------------------------------");
+
+            Console.Write("Escribe los datos a elminar>");
+            List<string> blocksDataDelete = new List<string>();
+            bool sw = true;
+            string? dataDelete = "";
+            while (sw == true)
+            {
+                dataDelete = Console.ReadLine();
+                blocksDataDelete.Add(dataDelete);
+
+                if (dataDelete == "") sw = false;
+
+            }
+
+            string? content = File.ReadAllText(path);
+
+            foreach (string? blokToRemove in blocksDataDelete)
+            {
+
+                int index = content.IndexOf(blokToRemove);//Don't waste time with this warning.
+
+                if (index < 0) return;
+
+                int endIndex = content.LastIndexOf(blokToRemove) + blokToRemove.Length;
+
+                content = content.Remove(index, endIndex - index);
+
+            }
+            File.WriteAllText(path, content);
+
         }
-    }
-    public void DeleteData()//Modificar para que archivo se va a modificar (string nameFile)
-    {
-        string path = "/home/dragon/workspace/TaskConsole/Data/datos.txt";
 
-        string content = File.ReadAllText(path);
-
-        Console.Write("Escribe el dato a elminar:");
-        string dataDelete = Console.ReadLine();
-
-        content = content.Replace(dataDelete, " ");
-
-        File.WriteAllText(path, content);
     }
 }
+
+
