@@ -13,3 +13,18 @@
 /home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.pdb
 /home/dragon/workspace/TaskConsole/obj/Debug/net7.0/TaskConsole.genruntimeconfig.cache
 /home/dragon/workspace/TaskConsole/obj/Debug/net7.0/ref/TaskConsole.dll
+C:\Users\Jhojan Toro\workspace\TaskConsole\bin\Debug\net7.0\TaskConsole.exe
+C:\Users\Jhojan Toro\workspace\TaskConsole\bin\Debug\net7.0\TaskConsole.deps.json
+C:\Users\Jhojan Toro\workspace\TaskConsole\bin\Debug\net7.0\TaskConsole.runtimeconfig.json
+C:\Users\Jhojan Toro\workspace\TaskConsole\bin\Debug\net7.0\TaskConsole.dll
+C:\Users\Jhojan Toro\workspace\TaskConsole\bin\Debug\net7.0\TaskConsole.pdb
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.csproj.AssemblyReference.cache
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.AssemblyInfoInputs.cache
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.AssemblyInfo.cs
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.csproj.CoreCompileInputs.cache
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.dll
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\refint\TaskConsole.dll
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.pdb
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\TaskConsole.genruntimeconfig.cache
+C:\Users\Jhojan Toro\workspace\TaskConsole\obj\Debug\net7.0\ref\TaskConsole.dll

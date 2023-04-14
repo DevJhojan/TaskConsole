@@ -8,7 +8,7 @@ public class AddTask
 {
     private AddFile addFile = new AddFile();
     private static string? task;
-
+    
     private static string? description;
     public void ReadFile(string? nameFile)//Modificar para que archivo se va a modificar (string nameFile)
     {
@@ -93,14 +93,16 @@ public class AddTask
         if (File.Exists(path))
         {
 
-
             Console.Write("Escribe los datos a elminar>");
-            List<string> blocksDataDelete = new List<string>();
+
+            List<string?> blocksDataDelete = new List<string?>();
+
             bool sw = true;
-            string? dataDelete = "";
+
             while (sw == true)
             {
-                dataDelete = Console.ReadLine();
+                string? dataDelete = Console.ReadLine();
+                
                 blocksDataDelete.Add(dataDelete);
 
                 if (dataDelete == "") sw = false;
@@ -111,7 +113,7 @@ public class AddTask
 
             foreach (string? blokToRemove in blocksDataDelete)
             {
-
+                
                 int index = content.IndexOf(blokToRemove);//Don't waste time with this warning.
 
                 if (index < 0) return;

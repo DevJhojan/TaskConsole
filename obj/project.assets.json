@@ -8,24 +8,32 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/dragon/.nuget/packages/": {}
+    "C:\\Users\\Jhojan Toro\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dragon/workspace/TaskConsole/TaskConsole.csproj",
+      "projectUniqueName": "C:\\Users\\Jhojan Toro\\workspace\\TaskConsole\\TaskConsole.csproj",
       "projectName": "TaskConsole",
-      "projectPath": "/home/dragon/workspace/TaskConsole/TaskConsole.csproj",
-      "packagesPath": "/home/dragon/.nuget/packages/",
-      "outputPath": "/home/dragon/workspace/TaskConsole/obj/",
+      "projectPath": "C:\\Users\\Jhojan Toro\\workspace\\TaskConsole\\TaskConsole.csproj",
+      "packagesPath": "C:\\Users\\Jhojan Toro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jhojan Toro\\workspace\\TaskConsole\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/dragon/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jhojan Toro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
